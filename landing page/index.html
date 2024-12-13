@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>☽Templo☾</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        #header {
+            background-color: #1c2833;
+            /* Azul grisáceo */
+        }
+
+        /* CSS para ajustar el tamaño de las imágenes y contenedores */
+        .team .pic img {
+            width: 100%;
+            /* Asegura que la imagen ocupe el ancho completo del contenedor */
+            height: 350px;
+            /* Aumenta la altura para hacer la imagen más grande */
+            object-fit: contain;
+            /* Escala la imagen para que se vea completa sin recortes */
+            background-color: #f0f0f0;
+            /* Color de fondo para posibles espacios vacíos */
+        }
+
+        /* CSS para el diseño de la cuadrícula */
+        .team .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* Ajusta el espacio entre columnas */
+        }
+
+        .team .col-lg-4,
+        .team .col-md-6 {
+            flex: 1 1 30%;
+            /* Asegura tres columnas por fila */
+            max-width: 30%;
+            /* Establece un ancho máximo para cada columna */
+            padding: 0;
+            /* Elimina el padding extra para un ajuste más preciso */
+        }
+
+        /* Asegura que el contenedor tenga suficiente espacio */
+        .team .container {
+            padding: 50px 0;
+            /* Aumenta el padding para darle más espacio al contenido */
+        }
+        .social-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+    .social-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .social-icon-container {
+      display: inline-block;
+      margin: 15px;
+    }
+    .social-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #343a40;
+      margin-bottom: 30px;
+    }
+    .redes {
+      padding: 60px 0;
+    }
+
+    .social-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .social-icon-container {
+      display: inline-block;
+      margin: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .info-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #1c2833;
+      margin-top: 30px;
+    }
+
+    </style>
+</head>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logoH.png" alt=""> -->
+            <h2 class="sitename" style="color: #f0c13b;">☽Templo de magia y sabiduría☾</h2>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="#inicio" class="active" style="color: #f0c13b;">Inicios Místicos</a></li>
+                <li><a href="#cartas" style="color: #f0c13b;">Cartas Tarot</a></li>
+                <li><a href="#productos" style="color: #f0c13b;">Nuestros productos</a></li>
+                <li><a href="#redes sociales" style="color: #f0c13b;">Redes Sociales</a></li>
+                <li><a href="#amor" style="color: #f0c13b;">Amor</a></li>
+                <li><a href="#contacto" style="color: #f0c13b;">Contactanos</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+    </div>
+</header>
+
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero section dark-background">
+        <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="assets/img/principal.jpeg" class="img-fluid animated" alt="">
+                </div>
+
+                <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+                    <h1 style="color: #f0c13b;">Descubre el Poder del Esoterismo: Conecta con lo Desconocido</h1>
+                    <p style="color: #f0c13b;">Adéntrate en un mundo místico donde lo oculto cobra vida. Explora el
+                        tarot, la astrología y el poder de los cristales mientras conectas con tu ser interior. Ya seas
+                        principiante o experto, aquí encontrarás recursos que enriquecerán tu viaje espiritual.
+                        ¡Despierta el sabio que llevas dentro!</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="cartas" class="about section" style="background-color: #2e4053;">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-xl-center gy-5">
+
+                <div class="col-xl-5 content">
+                    <h1 style="color: #f0c13b;">Explora los Misterios del Cosmos
+                    </h1>
+                    <br>
+                    <p style="color:white">Sumérgete en las energías cósmicas y descubre cómo pueden influir en tu vida.
+                        Conecta con el universo y las fuerzas invisibles que guían tu destino.</p>
+                    <br>
+                    <div class="space-y-4 text-white">
+                        <div class="flex items-center"><i class="fas fa-map-marker-alt text-yellow-500 mr-3"></i> Costa
+                            Rica</div>
+                        <div class="flex items-center"><i class="fas fa-envelope text-yellow-500 mr-3"></i>
+                            templodemagiaysabiduria@gmail.com</div>
+                        <div class="flex items-center"><i class="fas fa-phone-alt text-yellow-500 mr-3"></i> (+012) 3456
+                            7890</div>
+                        <div class="flex items-center"><i class="fab fa-firefox-browser text-yellow-500 mr-3"></i>
+                            www.templo.com</div>
+                    </div>
+                    <div class="mt-6 flex space-x-3">
+                        <a href="#" class="text-yellow-500 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-7">
+                    <div class="row gy-4 icon-boxes">
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-box"
+                                style="background-color: #2a3b4c; color: white; padding: 20px; border-radius: 8px;">
+                                <i class="bi bi-magic" style="color: yellow;"></i>
+                                <h3 style="color: #f0c13b;">Mago</h3>
+                                <p>Representa poder, habilidad y acción. Indica que tienes las herramientas necesarias para manifestar tus deseos.</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box"
+                                style="background-color: #2a3b4c; color: white; padding: 20px; border-radius: 8px;">
+                                <i class="bi bi-chevron-contract" style="color: yellow;"></i>
+                                <h3 style="color: #f0c13b;">La Sacerdotisa</h3>
+                                <p>Simboliza la intuición, el conocimiento oculto y el misterio. Te invita a escuchar tu voz interior. </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box"
+                                style="background-color: #2a3b4c; color: white; padding: 20px; border-radius: 8px;">
+                                <i class="bi bi-brilliance" style="color: yellow;"></i>
+                                <h3 style="color: #f0c13b;">La Emperatriz</h3>
+                                <p>Representa la abundancia, la fertilidad y la creatividad. Es un símbolo de crecimiento y prosperidad.</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box"
+                                style="background-color: #2a3b4c; color: white; padding: 20px; border-radius: 8px;">
+                                <i class="bi bi-brightness-low-fill" style="color: yellow;"></i>
+                                <h3 style="color: #f0c13b;">El Sol</h3>
+                                <p>Simboliza la alegría, la vitalidad y el éxito. Una carta positiva que representa un futuro brillante.</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box"
+                                style="background-color: #2a3b4c; color: white; padding: 20px; border-radius: 8px;">
+                                <i class="bi bi-moon-stars-fill" style="color: yellow;"></i>
+                                <h3 style="color: #f0c13b;">La Luna</h3>
+                                <p>Simboliza la alegría, la vitalidad y el éxito. Una carta positiva que representa un futuro brillante.</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box"
+                                style="background-color: #2a3b4c; color: white; padding: 20px; border-radius: 8px;">
+                                <i class="bi bi-bank" style="color: yellow;"></i>
+                                <h3 style="color: #f0c13b;">El Juicio</h3>
+                                <p>Simboliza la renovación, la reflexión y el despertar espiritual. Es un llamado a la autoevaluación.</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section><!-- /About Section -->
+
+
+
+    <!-- Team Section -->
+    <section id="productos" class="team section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Nuestros Servicios</h2>
+            <div><span>Mira lo que tenemos</span> <span class="description-title">para ti</span></div>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <div class="pic"><img src="assets/img/amor.jpeg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Trabajos de amor</h4>
+                            <span><3</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <div class="pic"><img src="assets/img/proteccion.jpeg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Proteccion y Limpieza Energetica</h4>
+                            <span>🔒</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <div class="pic"><img src="assets/img/pareja.jpeg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Recuperaciones de Pareja</h4>
+                            <span>💑</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <div class="pic"><img src="assets/img/blanca.jpeg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Salud y Bienestar</h4>
+                            <span>🩺</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <div class="pic"><img src="assets/img/image.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Maheeso</h4>
+                            <span></span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <div class="pic"><img src="assets/img/servicio.jpeg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Pregunta por el tuyo</h4>
+                            <span>Resultados rapidos</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Team Section -->
+    <section id="redes sociales" class="redes">
+        <div class="container">
+          <h2 class="social-title">Conecta con el Mundo Esotérico</h2>
+          
+          <!-- Contenedor para las redes sociales -->
+          <div class="social-container">
+            <div class="social-icon-container">
+              <a href="https://www.facebook.com/share/18Uy7yZJRy/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+              </a>
+            </div>
+    
+            <div class="social-icon-container">
+                <a href="https://wa.link/g4twsh" target="_blank">
+                  <img src="../icons/whatsapp.png" alt="WhatsApp" class="social-icon">
+                </a>
+              </div>
+              
+    
+            <div class="social-icon-container">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+              </a>
+            </div>
+          </div>
+    
+          <!-- Información adicional sobre esoterismo -->
+          <div class="info-text">
+            <p>Las redes sociales son una excelente manera de adentrarse más en el fascinante mundo del esoterismo, el tarot, la astrología y más. ¡Síguenos en nuestras redes para obtener consejos, lecturas gratuitas, predicciones astrológicas y mucho más!</p>
+            <p>Sumérgete en el misterio del universo, descubre secretos que han sido revelados solo a aquellos que se atreven a explorar las energías ocultas y las vibraciones cósmicas.</p>
+          </div>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Contactanos</h2>
+            <div><span>Completa el</span> <span class="description-title">formulario</span></div>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4">
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h3>Ubicacion</h3>
+                            <p>Nicaragua</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3>Llamanos</h3>
+                            <p>(+012) 3456 7890</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>Correo de Contacto</h3>
+                            <p>templodemagiaysabiduria@gmail.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                    required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                    required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                    required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                <button type="submit">Send Message</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div><!-- End Contact Form -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Contact Section -->
+    <section id="amor" class="team section" >
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nos Especializamos en el Amor</h2>
+          <div><span>Déjanos ayudarte</span> <span class="description-title">con tu situación sentimental</span></div>
+        </div><!-- End Section Title -->
+      
+        <div class="container">
+          <div class="row gy-5">
+      
+            <!-- Card with Video -->
+            <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="pic">
+                  <video width="100%" height="auto" controls>
+                    <source src="../icons/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                  </video>
+                </div>
+                <div class="member-info">
+                  <h4>Descubre nuestros servicios de amor</h4>
+                  <p>Te ayudamos a encontrar la paz y el amor que tanto deseas. Conoce todo lo que podemos hacer por ti.</p>
+                </div>
+              </div>
+            </div><!-- End Video -->
+      
+            <!-- Consulta Gratis Card -->
+            <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="pic">
+                  <img src="../icons/calavera.png" class="img-fluid" alt="Calaveras" />
+                </div>
+                <div class="member-info">
+                  <h4>Consulta Gratis</h4>
+                  <p>¿Tienes dudas? ¡Consulta gratis sobre tu situación amorosa y recibe orientación experta!</p>
+                  <a href="mailto:info@tuweb.com" class="btn btn-primary">¡Solicita tu consulta ahora!</a>
+                </div>
+              </div>
+            </div><!-- End Consulta Gratis -->
+      
+          </div>
+        </div>
+      </section>
+      
+
+</main>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
